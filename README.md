@@ -11,6 +11,12 @@ Once SQL server was installed, I configured windows registry to provide full per
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/7326f527-5d12-45c8-93ca-a166269e6556)
 
+# Configured SQL Server Management 
+Login auditing was then configured to allow both failed and succesful logins.
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/b243579a-2267-42e4-82dc-14c86d731473)
+
+
 
 ## Introduction
 
