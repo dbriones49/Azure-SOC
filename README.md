@@ -35,6 +35,18 @@ I left the windows and Linux VMs on for several hours. From the fileter I was ab
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/68d312e8-b49f-4273-bccd-a4ece55b0ca1)
 
 
+# Reviewed logs from the Linux VM
+From running a few filters, we are also able to see the numerous attempts to access the Linux server
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/ba6cc010-f3d4-4aba-96b7-3828eaf7c4a1)
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/1ace935e-1e26-4eed-92ee-ed8c7245c4bb)
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/f393f876-8bc6-4801-a8f4-51d697aff330)
+
+
+
+
 
 
 ## Introduction
