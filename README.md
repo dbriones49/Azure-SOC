@@ -20,8 +20,17 @@ Login auditing was then configured to allow both failed and succesful logins.
 
 
 # Provisioned an attack VM 
-An "attack" VM was created to attempt to access the windows VM, and the Linux SQL Server
+An "attack" VM was created to attempt to access the windows VM, and the Linux SQL Server. I attempted three failed logins on each VM.
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/2e40d81c-17a6-4dd9-b1dc-ef8a4ac636a5)
+
+
+# Reviewed event logs from the Windows VM
+I left the windows and Linux VMs on for several ours. From the fileter I was able to see numerous attempts to access the VMs
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/58a5bc8b-5df1-4411-ad39-fffedf3b8299)
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/68d312e8-b49f-4273-bccd-a4ece55b0ca1)
+
+
 
 
 ## Introduction
