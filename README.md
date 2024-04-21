@@ -60,6 +60,9 @@ and used to derive geolocation from IP addresses from attackers. These will plot
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/6b59d71a-cafe-4078-9e9f-42e1bcab4079)
 
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/a55fabff-f3a0-452d-a126-15e39a153237)
+
+
 
 
 
