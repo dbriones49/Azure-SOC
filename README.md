@@ -27,7 +27,7 @@ An "attack" VM was created to attempt to access the windows VM, and the Linux SQ
 
 
 # Reviewed event logs from the Windows VM
-I left the windows and Linux VMs on for several hours. From the fileter I was able to see numerous attempts to access the VMs
+I left the windows and Linux VMs on for several hours. From basic filters, I was able to see numerous attempts to access the VMs
 
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/58a5bc8b-5df1-4411-ad39-fffedf3b8299)
@@ -45,6 +45,11 @@ From running a few filters, we are also able to see the numerous attempts to acc
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/f393f876-8bc6-4801-a8f4-51d697aff330)
 
 
+# Configured Active Directory
+Azure Active Directory logs, subscription level logs, and the resource level logs were created in Azure Active Directory to capture log activity.
+These will then be used to forward to the centralized log analytics workspace.
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/6b999ec3-ed2a-45e6-a858-46451bbf8388)
 
 
 
