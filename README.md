@@ -51,6 +51,12 @@ These will then be used to forward to the centralized log analytics workspace.
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/6b999ec3-ed2a-45e6-a858-46451bbf8388)
 
+# Configured Log Analytics Workshpace and Sentiniel
+A Log analytics workspace was created. Azure Sentiniel(SIEM) was also deployed.
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/eee8d8ab-7860-44d0-bdde-89aa19815bbd)
+
+
 
 
 
