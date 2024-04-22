@@ -72,6 +72,14 @@ This will enable Windows Defender for Cloud to analyze traffic and will determin
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/6fba919b-3ab3-408a-8c91-5051f48b4547)
 
 
+# Confirmed both VMs are reflected in Log Analytic Workspace. 
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/68a02ab5-61a6-4e8e-a7e4-e64a1bd9d140)
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/bd98bafa-4a78-4ed0-ab97-252356dbc41d)
+
+
 
 
 
