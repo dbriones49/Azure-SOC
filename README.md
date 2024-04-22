@@ -91,8 +91,17 @@ In this project, I built a mini honeynet in Azure and ingested log sources from 
 ## Architecture Before Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
 
+
 ## Architecture After Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+
+
+## Configured data collection rules.
+Configuring the data collection rules helps Windows Defender for Cloud specify which logs from the VMs are forwarded to the log analytics workspace.
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/88bd60d8-b870-4b29-b0ff-26647d5b4cf7)
+
 
 
 
