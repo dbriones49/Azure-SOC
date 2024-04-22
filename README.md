@@ -65,6 +65,14 @@ and used to derive geolocation from IP addresses from attackers. These will plot
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/a55fabff-f3a0-452d-a126-15e39a153237)
 
 
+# Windows Defender for Cloud.
+Next, I Enabled Defender for cloud, which will auto install an agent on VMs that will allows us to forward logs into the log analytics work space.
+NSG flow logs were created for each security group and flow logs were enabled. This will enable Windows defender for cloud to analyze traffic and will determine which traffic is malicious and/or benign. 
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/6fba919b-3ab3-408a-8c91-5051f48b4547)
+
+
+
 
 
 
