@@ -121,6 +121,13 @@ I created a test "dummy" account and attempted to login using false credentials,
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/29acfd41-fa47-4a47-ae9c-069ed2da63c5)
 
 
+# Created a back up user account.
+I next created a "break glass" account with global administrative access, incase something would have happened to my account.
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/cf30b261-07f5-4ee3-b032-648236b4d52f)
+
+
 
 
 
