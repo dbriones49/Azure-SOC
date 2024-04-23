@@ -98,6 +98,8 @@ This will enable Windows Defender for Cloud to analyze traffic and will determin
 
 # Confirmed both VMs are reflected in Log Analytics Workspace. 
 
+
+
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/68a02ab5-61a6-4e8e-a7e4-e64a1bd9d140)
 
 
