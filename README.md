@@ -80,7 +80,14 @@ and used to derive geolocation from IP addresses from attackers. These will plot
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/a55fabff-f3a0-452d-a126-15e39a153237)
 
 
-# Configured data collection rules. 
+## Configured data collection rules.
+Configuring the data collection rules helps Windows Defender for Cloud specify which logs from the VMs are forwarded to the log analytics workspace.
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/88bd60d8-b870-4b29-b0ff-26647d5b4cf7)
+
+
+# Created Data Flow Logs. 
 Windows Defender for Cloud auto installs an agent on VMs that will allows us to forward logs into the log analytics work space. Once this was enabled, NSG flow logs were created for each security group and flow logs were enabled. 
 This will enable Windows Defender for Cloud to analyze traffic and will determine which traffic is malicious and/or benign. 
 
@@ -124,12 +131,6 @@ I created a test "dummy" account and attempted to login using false credentials,
 ## Architecture After Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
 
-
-## Configured data collection rules.
-Configuring the data collection rules helps Windows Defender for Cloud specify which logs from the VMs are forwarded to the log analytics workspace.
-
-
-![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/88bd60d8-b870-4b29-b0ff-26647d5b4cf7)
 
 
 
