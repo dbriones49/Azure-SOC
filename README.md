@@ -108,7 +108,7 @@ This will enable Windows Defender for Cloud to analyze traffic and will determin
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/bd98bafa-4a78-4ed0-ab97-252356dbc41d)
 
 
-# Confirmed Syslog injestion.
+# Confirmed Syslog ingestion.
 At this point, I pulled upt the Log Analytics Workshpace and confirmed the logs were imported. It was interesting to see the amount of infiltration efforts attempted by running a KQL brute force qeuery.
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/eb7f2383-7af3-459b-9f9f-394b6f2ecb37)
