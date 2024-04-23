@@ -17,6 +17,8 @@ In this project, I built a mini honeynet in Azure and ingested log sources from 
 
 
 # Azure Instances
+I started with deploying both Linux and a Windows VM, and installed MySQL servers on each. No data was entered in the server.
+
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/35fe6cdb-c3b7-4602-aa17-c68c8d91ac28)
 
 
