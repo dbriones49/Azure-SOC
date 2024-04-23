@@ -83,6 +83,10 @@ This will enable Windows Defender for Cloud to analyze traffic and will determin
 
 
 
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/eb7f2383-7af3-459b-9f9f-394b6f2ecb37)
+
+
+# Syslog dump confirmed.
 
 
 
