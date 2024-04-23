@@ -88,6 +88,13 @@ At this point, I pulled upt the Log Analytics Workshpace and confirmed the logs 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/eb7f2383-7af3-459b-9f9f-394b6f2ecb37)
 
 
+# Created a test user account to test new log attempts.
+I created a test "dummy" account and attempted to login using false credentials, to ensure the new logs were flowing through.
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/97134011-56bf-403e-b930-56161044edcc)
+
+
 
 
 
