@@ -128,6 +128,14 @@ I next created a "break glass" account with global administrative access, incase
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/cf30b261-07f5-4ee3-b032-648236b4d52f)
 
 
+# Exported Activity Logs
+Next, I Exported Azure activity logs to the Log Analytics Workspace, and new resource group were created to generate testing logs. 
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/c8d8da22-6c1d-4536-8d33-d6aec6434abf)
+
+
+
 
 
 
