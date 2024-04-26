@@ -206,9 +206,19 @@ For the "BEFORE" metrics, all resources that were originally deployed were xpose
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/9e344880-264a-4be2-9202-5abe7c488f99)
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/b4060738-a337-415d-a1fa-4637c39c754c)
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/8a0ec3cd-3c7a-482e-94fa-55ad613d34be)
+
+
+
+
 
 ## Metrics Before Hardening / Security Controls
 
