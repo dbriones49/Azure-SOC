@@ -171,6 +171,16 @@ To construct the maps, JSON code was entered a Sentinel workbook.
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/9a82161c-af1f-4978-841e-0c60208a7db7)
 
 
+From here(maps are below), we can extract the map queries in Sentinel and insert them into Log Analytics Workspace, and perform deep dives on specific security event using the geodata.
+
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/925c7b76-28ad-4246-b0a9-b683a424cbe4)
+
+
+
+
+
 
 
 
