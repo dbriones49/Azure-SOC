@@ -142,12 +142,18 @@ The Storage logs and Key Vault logs still need to be enable. Here I enbabled the
 
 
 # Generated key vault secret
- Once I created a key valault instance, a secret to the vault was generated. Copying the secret to the clipboard will generate a log for testing purposes. Next Ienabled the diagnostic settings to send the audit logs into the Log Anayltics workspace.
+ Once I created a key vault instance, I then generated secret to the vault. Copying the secret to the clipboard will generate a log for testing purposes. Next Ienabled the diagnostic settings to send the audit logs into the Log Anayltics workspace.
  
  ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/fe4d2ca2-73ba-49a1-aa9d-e56e5f76bef0)
 
 
  ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/8bb69c8a-86f4-44c2-8b53-bffc8e4a8d0f)
+
+# Blog log test
+Finally, I conducted a query test for the blog logs.
+
+ ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/fb8c54ab-dd0c-4721-a300-3a3fda5a1804)
+
 
 
 
