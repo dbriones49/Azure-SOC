@@ -134,6 +134,14 @@ Next, I Exported Azure activity logs to the Log Analytics Workspace, and new res
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/c8d8da22-6c1d-4536-8d33-d6aec6434abf)
 
+Now that the activity test logs were confirmed as received, I continued to stress test the log environment. I triggered inbound security rules in the security group, to confirm that if any changes made to the network secuirty group, they would be flagged and captured in the log query.
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/2b2c4231-0be3-4175-9f38-651c8461dfc2)
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/6bf1d872-6fca-4652-809a-232118083f0b)
+
 
 
 
