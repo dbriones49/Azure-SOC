@@ -135,6 +135,21 @@ Next, I Exported Azure activity logs to the Log Analytics Workspace, and new res
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/c8d8da22-6c1d-4536-8d33-d6aec6434abf)
 
 
+# Enabled flow logs from the storage(blob) account.
+The Storage logs and Key Vault logs still need to be enable. Here I enbabled the storage logs to flow to the Log Analytics Workspace.
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/32b14f8a-5505-431d-937d-84c23e5042f8)
+
+
+# Generated key vault secret
+ Once I created a key valault instance, a secret to the vault was generated. Copying the secret to the clipboard will generate a log for testing purposes. Next Ienabled the diagnostic settings to send the audit logs into the Log Anayltics workspace.
+ 
+ ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/fe4d2ca2-73ba-49a1-aa9d-e56e5f76bef0)
+
+
+ ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/8bb69c8a-86f4-44c2-8b53-bffc8e4a8d0f)
+
+
 
 
 
