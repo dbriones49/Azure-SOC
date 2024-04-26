@@ -155,6 +155,22 @@ Finally, I conducted a query test for the blog logs.
  ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/fb8c54ab-dd0c-4721-a300-3a3fda5a1804)
 
 
+ # Word Map Construction
+ 
+I used pre-built JSON Maps to reduce the number of errors.
+These maps will display the locations of the threat actors from a global standpoint. The maps were created to track the following:
+
+-Map 1 will track failed authentications for the windows VM(remote desktop authentications)
+-Map 3 will track SSH auth for linux VM
+-Map 3 will track attacks on the Microsoft MySQL server
+-Map 4 will track alicious inbound flows for the network security group,
+
+To construct the maps, JSON code was entered a Sentinel workbook.
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/9a82161c-af1f-4978-841e-0c60208a7db7)
+
+
 
 
 
