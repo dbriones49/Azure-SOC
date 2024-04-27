@@ -136,7 +136,7 @@ Next, I Exported Azure activity logs to the Log Analytics Workspace, and new res
 
 
 # Enabled flow logs from the storage(blob) account.
-The Storage logs and Key Vault logs still need to be enable. Here I enbabled the storage logs to flow to the Log Analytics Workspace.
+The Storage logs and Key Vault logs still need to be enabled at this point. Here I enbabled the storage logs to flow to the Log Analytics Workspace.
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/32b14f8a-5505-431d-937d-84c23e5042f8)
 
