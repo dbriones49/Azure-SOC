@@ -257,6 +257,11 @@ Finally, I manually triggered and tested some of the custom analytic rules insid
 
 
 
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/512aeb76-462a-43e3-956c-04fc37e36f99)
+
+
+
+
 
 
 ## Metrics Before Hardening / Security Controls
