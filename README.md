@@ -201,6 +201,11 @@ I completed 10 brute force attempts from the windows VM to confirm if this would
 
 
 
+# Final Rules
+Now that I had a successful test run with flagging incidents in Sentinel, I deleted the test rules and results, and enterd in the final query rules for Brute Force Attempts, Malware Detected, Privilege Escalation, and Lateral Movement.
+
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/f3364771-7dc3-4984-a745-79f622797e41)
 
 
 
