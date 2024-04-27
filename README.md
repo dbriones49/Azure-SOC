@@ -250,6 +250,12 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/8a0ec3cd-3c7a-482e-94fa-55ad613d34be)
 
 
+## Final testing of rules
+Finally, I manually triggered and tested some of the custom analytic rules inside of Azure Active Directory. These rules address Brute Force attempts in both MSSQL and Azure Active Directory, Malware, Possible Privilege Escalation, Windows Host Firewall Tampering, and Excessive Password Resets. To test them, I copied the queries from the analytics screen within Sentinel and ran them in Log Analytics. I also ensured they were visible in the "incidents" screen within Sentinel. For the malware test, I used a malware script and ran it within the windows VM.
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/39e3bb96-daee-4bf8-acf9-90793eff26cf)
+
+
 
 
 
