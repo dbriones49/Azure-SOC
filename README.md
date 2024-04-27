@@ -181,7 +181,11 @@ From here(maps are below), we can extract the map queries in Sentinel and insert
 
 
 
+ # New Test Rules Created
+Next, I manually created analytics rules to create alerts, which will generate incidents within the environment. 
 
+
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/67fe78b4-850c-4329-8029-a424f8248a0c)
 
 
 
