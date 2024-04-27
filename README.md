@@ -189,6 +189,11 @@ Next, I manually created analytics rules to create alerts, which will generate i
 
 
 
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/880fc1bc-4f93-42a8-af13-57ecfa4d2715)
+
+
+
+
 
 
 
