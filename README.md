@@ -240,14 +240,13 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
 ## Attack Maps Before Hardening / Security Controls
 
-
-![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/9e344880-264a-4be2-9202-5abe7c488f99)
-
-
-![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/b4060738-a337-415d-a1fa-4637c39c754c)
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/84d0a0b2-f1f3-4a00-b3eb-7cca032af758)
 
 
-![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/8a0ec3cd-3c7a-482e-94fa-55ad613d34be)
+
+
+
+
 
 
 ## Final testing of rules
