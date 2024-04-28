@@ -243,6 +243,10 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/84d0a0b2-f1f3-4a00-b3eb-7cca032af758)
 
 
+![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/c2a07610-628a-4cff-af9a-2abe7957552a)
+
+
+
 
 
 
