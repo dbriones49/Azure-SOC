@@ -66,9 +66,9 @@ These were used to forward to the centralized log analytics workspace.
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/6b999ec3-ed2a-45e6-a858-46451bbf8388)
 
-# Configured Log Analytics Workshpace and Sentinel
-A Log analytics workspace was created. Azure Sentiniel(SIEM) was also deployed. Once Sentinel was deployed a watchlist was created (list of network blocks) 
-and used to derive geolocation from IP addresses from attackers. These will plot attack spots on our SIEM map.
+# Configured Log Analytics Workspace and Sentinel
+A Log analytics workspace was created. Azure Sentiniel(SIEM) was also deployed. Once Sentinel was deployed, a watchlist was created (list of network blocks) 
+and used to derive geolocations from IP addresses from attackers. These ploted attack spots on our SIEM map.
 
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/eee8d8ab-7860-44d0-bdde-89aa19815bbd)
@@ -81,15 +81,15 @@ and used to derive geolocation from IP addresses from attackers. These will plot
 
 
 ## Configured data collection rules.
-Configuring the data collection rules helps Windows Defender for Cloud specify which logs from the VMs are forwarded to the log analytics workspace.
+I configured the data collection rules to allow Windows Defender for Cloud specify which logs from the VMs were forwarded to the log analytics workspace.
 
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/88bd60d8-b870-4b29-b0ff-26647d5b4cf7)
 
 
 # Created Data Flow Logs. 
-Windows Defender for Cloud auto installs an agent on VMs that will allows us to forward logs into the log analytics work space. Once this was enabled, NSG flow logs were created for each security group and flow logs were enabled. 
-This will enable Windows Defender for Cloud to analyze traffic and will determine which traffic is malicious and/or benign. 
+Windows Defender for Cloud auto installs an agent on VMs that allowed us to forward logs into the log analytics work space. Once this was enabled, NSG flow logs were created for each security group and flow logs were enabled. 
+This enabled Windows Defender for Cloud to analyze traffic and determined which traffic was malicious and/or benign. 
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/6fba919b-3ab3-408a-8c91-5051f48b4547)
 
@@ -115,7 +115,7 @@ At this point, I pulled upt the Log Analytics Workshpace and confirmed the logs 
 
 
 # Created a test user account to test new log attempts.
-I created a test "dummy" account and attempted to login using false credentials, to ensure the new logs were flowing through.
+Next, I created a test "dummy" account and attempted to login using false credentials, to ensure the new logs were flowing through.
 
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/29acfd41-fa47-4a47-ae9c-069ed2da63c5)
@@ -129,25 +129,27 @@ I next created a "break glass" account with global administrative access, incase
 
 
 # Exported Activity Logs
-Next, I Exported Azure activity logs to the Log Analytics Workspace, and new resource group were created to generate testing logs. 
+Azure activity logs were exported to the Log Analytics Workspace, and a new resource group was created to generate testing logs. 
 
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/c8d8da22-6c1d-4536-8d33-d6aec6434abf)
 
 
 # Enabled flow logs from the storage(blob) account.
-The Storage logs and Key Vault logs still need to be enabled at this point. Here I enbabled the storage logs to flow to the Log Analytics Workspace.
+The Storage logs and Key Vault logs still needed to be enabled at this point. Here I enbabled the storage logs to flow to the Log Analytics Workspace.
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/32b14f8a-5505-431d-937d-84c23e5042f8)
 
 
 # Generated key vault secret
- Once I created a key vault instance, I then generated secret to the vault. Copying the secret to the clipboard will generate a log for testing purposes. Next Ienabled the diagnostic settings to send the audit logs into the Log Anayltics workspace.
+ Once I created a key vault instance, I then generated secret to the vault. Copying the secret to the clipboard will generate a log for testing purposes. Next, I enabled the diagnostic settings to send the audit logs into the Log Anayltics workspace.
  
  ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/fe4d2ca2-73ba-49a1-aa9d-e56e5f76bef0)
 
 
  ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/8bb69c8a-86f4-44c2-8b53-bffc8e4a8d0f)
+
+ 
 
 # Blog log test
 Finally, I conducted a query test for the blog logs.
@@ -155,17 +157,19 @@ Finally, I conducted a query test for the blog logs.
  ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/fb8c54ab-dd0c-4721-a300-3a3fda5a1804)
 
 
- # Word Map Construction
+# Word Map Construction
  
-I used pre-built JSON Maps to reduce the number of errors.
+To construct the map, I used pre-built JSON Maps to reduce the number of errors.
 These maps will display the locations of the threat actors from a global standpoint. The maps were created to track the following:
 
 -Map 1 will track failed authentications for the windows VM(remote desktop authentications)
 -Map 3 will track SSH auth for linux VM
 -Map 3 will track attacks on the Microsoft MySQL server
--Map 4 will track alicious inbound flows for the network security group,
+-Map 4 will track alicious inbound flows for the network security group.
 
-To construct the maps, JSON code was entered a Sentinel workbook.
+
+
+The JSON code was entered a Sentinel workbook.
 
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/9a82161c-af1f-4978-841e-0c60208a7db7)
