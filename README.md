@@ -12,6 +12,16 @@ In this project, I built a mini honeynet in Azure and ingested log sources from 
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
 
+The architecture of the mini honeynet in Azure consists of the following components:
+
+- Virtual Network (VNet)
+- Network Security Group (NSG)
+- Virtual Machines (2 windows, 1 linux)
+- Log Analytics Workspace
+- Azure Key Vault
+- Azure Storage Account
+- Microsoft Sentinel
+
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/c278c18d-e192-4f6e-9ede-654f03a81479)
 
@@ -35,7 +45,7 @@ Login auditing was then configured to allow both failed and succesful logins.
 
 
 # Provisioned an attack VM 
-An "attack" VM was created to attempt to access the windows VM, and the Linux SQL Server. 
+An "attack" VM was created to attempt to access the windows VM, and the Linux SQL Server. These attempts tgriggered log activity.
 
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/2e40d81c-17a6-4dd9-b1dc-ef8a4ac636a5)
@@ -51,7 +61,7 @@ I left the windows and Linux VMs on for several hours. From basic filters, I was
 
 
 # Reviewed logs from the Linux VM
-From running a few filters, we are also able to see the numerous attempts to access the Linux server
+From running a few filters, I was also able to see the numerous attempts to access the Linux server
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/ba6cc010-f3d4-4aba-96b7-3828eaf7c4a1)
 
@@ -81,14 +91,14 @@ and used to derive geolocations from IP addresses from attackers. These ploted a
 
 
 ## Configured data collection rules.
-I configured the data collection rules to allow Windows Defender for Cloud specify which logs from the VMs were forwarded to the log analytics workspace.
+I configured the data collection rules to allow Windows Defender for Cloud to specify which logs from the VMs were forwarded to the log analytics workspace.
 
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/88bd60d8-b870-4b29-b0ff-26647d5b4cf7)
 
 
 # Created Data Flow Logs. 
-Windows Defender for Cloud auto installs an agent on VMs that allowed us to forward logs into the log analytics work space. Once this was enabled, NSG flow logs were created for each security group and flow logs were enabled. 
+Windows Defender for Cloud auto installed an agent on VMs that allowed us to forward logs into the log analytics work space. Once this was enabled, NSG flow logs were created for each security group and flow logs were enabled. 
 This enabled Windows Defender for Cloud to analyze traffic and determined which traffic was malicious and/or benign. 
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/6fba919b-3ab3-408a-8c91-5051f48b4547)
@@ -109,7 +119,7 @@ This enabled Windows Defender for Cloud to analyze traffic and determined which 
 
 
 # Confirmed Syslog ingestion.
-At this point, I pulled upt the Log Analytics Workshpace and confirmed the logs were imported. It was interesting to see the amount of infiltration efforts attempted by running a KQL brute force qeuery.
+At this point, I pulled upt the Log Analytics Workspace and confirmed the logs were imported. It was interesting to see the amount of infiltration efforts attempted by running a KQL brute force qeuery.
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/eb7f2383-7af3-459b-9f9f-394b6f2ecb37)
 
@@ -198,7 +208,7 @@ Next, I manually created analytics rules to create alerts, which will generate i
 
 
 # Tested New Rules
-I completed 10 brute force attempts from the windows VM to confirm if this would trigger our new rules. Sure enough, it did.
+I completed serveral brute force attempts from the windows VM to confirm if this would trigger our new rules. Sure enough, it did.
 
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/32226bcc-6d2a-4fb5-b09e-4a9bab82f5bc)
@@ -228,15 +238,6 @@ Now that I had a successful test run with flagging incidents in Sentinel, I dele
 
 
 
-The architecture of the mini honeynet in Azure consists of the following components:
-
-- Virtual Network (VNet)
-- Network Security Group (NSG)
-- Virtual Machines (2 windows, 1 linux)
-- Log Analytics Workspace
-- Azure Key Vault
-- Azure Storage Account
-- Microsoft Sentinel
 
 For the "BEFORE" metrics, all resources that were originally deployed were xposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls configured to be wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
 
