@@ -265,8 +265,6 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 
 
 
-
-
 ## Final testing of rules
 Finally, I manually triggered and tested some of the custom analytic rules inside of Azure Active Directory. These rules address Brute Force attempts in both MSSQL and Azure Active Directory, Malware, Possible Privilege Escalation, Windows Host Firewall Tampering, and Excessive Password Resets. To test them, I copied the queries from the analytics screen within Sentinel and ran them in Log Analytics. I also ensured they were visible in the "incidents" screen within Sentinel. For the malware test, I used a malware script and ran it within the windows VM. To trigger the Windows Host Firewalls, I enbaled the firewalls in Windows VM defender, then unabled them again. 
 
@@ -279,37 +277,6 @@ Finally, I manually triggered and tested some of the custom analytic rules insid
 
 
 
-
-
-## Metrics Before Hardening / Security Controls
-
-The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 4/27/2024 10:46:27
-Stop Time 4/28/2024 10:46:27
-
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | 11639
-| Syslog                   | 2345
-| SecurityAlert            | 8
-| SecurityIncident         | 263
-| AzureNetworkAnalytics_CL | 1710
-
-
-
-## Metrics After Hardening / Security Controls
-
-The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 4/29/2024 11:02:49
-Stop Time	4/30/2024 11:02:49
-
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | 8114
-| Syslog                   | 80
-| SecurityAlert            | 0
-| SecurityIncident         | 0
-| AzureNetworkAnalytics_CL | 23
 
 ## Conclusion
 
