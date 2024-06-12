@@ -175,7 +175,7 @@ These maps will display the locations of the threat actors from a global standpo
 -Map 1 will track failed authentications for the windows VM(remote desktop authentications)
 -Map 3 will track SSH auth for linux VM
 -Map 3 will track attacks on the Microsoft MySQL server
--Map 4 will track alicious inbound flows for the network security group.
+-Map 4 will track malicious inbound flows for the network security group.
 
 
 
