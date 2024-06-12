@@ -33,7 +33,7 @@ I started with deploying both Linux and a Windows VM, and installed MySQL server
 
 
 # Configured windows registry
-Once SQL server was installed, I configured windows registry to provide full permissions to the server. Configurations were made in Windows Registry. Once completed, audit access was configured using auditpol.
+Once SQL server was installed, I configured windows registry to provide full permissions to the server. Once completed, audit access was configured using auditpol.
 
 ![image](https://github.com/dbriones49/Azure-SOC/assets/143753667/7326f527-5d12-45c8-93ca-a166269e6556)
 
